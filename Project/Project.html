@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<script>
+        function testVariable() {
+            debugger
+            var strText = document.getElementById("txtName").value;
+            var strText1 = document.getElementById("txtEmail").value;
+            document.getElementById("p1").innerHTML = strText;
+            document.getElementById("p2").innerHTML = strText1;
+
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="text" id="psw" name="psw">
+    
+<div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" placeholder="Name" required>
+
+    <label for="psw">Password</label>
+    <input type="text" id="psw" name="psw" placeholder="Password">
+
+
+    <input type="submit" value="Submit" onclick="testVariable()">
+    </form>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+</html>
